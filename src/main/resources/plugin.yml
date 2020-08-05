@@ -1,0 +1,5 @@
+name: AntiHackedClientAntiBot
+version: @version@
+main: uwu.smsgamer.antihackedclientantibot.AntiHackedClientAntiBot
+description: Blocks some hacked clients and most bots.
+softdepend: [PlaceholderAPI]

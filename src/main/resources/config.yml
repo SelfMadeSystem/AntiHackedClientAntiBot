@@ -1,0 +1,52 @@
+messages:
+  header: "&6==█==&8Press Button&6==█==&r"
+  button: "
+  ██████████████\n
+  ██████████████\n
+  █████&cPress Me&r█████\n
+  ██████████████\n
+  ██████████████"
+  footer: "&7==&6█&7===&6█&7==&6█&7==&6█&7==&6█&7===&6█&7==&6"
+  clickable: "█="
+  left: "You have %s% second%sp% left. %c% more click%cp%."
+clicks:
+  - ".say .say %m%"
+  - ".help %m%"
+  - "-say -say %m%"
+  - "-help %m%"
+    message-allowed-chars: "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^*()_-+=[{}]';:/?.>,<"
+message-length:
+  min: 50
+  max: 60
+max-time:
+  counted-in-ticks: 600
+time-between-checks:
+  counted-in-ms: 86400000
+block-during-check:
+  movement:
+    horizontal: true
+    vertical-up: true
+    vertical-down: false
+  disable-interact: true
+  disable-item-drop: true
+  disable-item-pickup: true
+  disable-inventory-open: true
+  disable-inventory-management: true
+  disable-damage: false
+
+commands:
+  join-not-verified:
+    - "msg %player% Please click the button to verify that you're gnot a gnelf."
+  complete:
+    - "msg %player% Completed check. Have fun!"
+  already-done:
+    - "msg %player% Check already completed. Have fun!"
+  failed-timout:
+    - "kick %player% jajajajaj b0t l0l"
+  failed-wrong-message:
+    '1':
+      - "msg %player% Incorrect. Click the center of the box, not top or bottom."
+    '2':
+      - "msg %player% Incorrect. Click the center of the box, not top or bottom."
+    '3':
+      - "kick %player% jajajajaj b0t l0l"
